@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin
+>
+   <extension
+         point="org.eclipse.ui.importWizards">
+      <wizard
+            category="org.eclipse.ui.Basic"
+            class="org.eclipse.ui.ide.format.extension.wizard.FormatExtensionProjectImportWizard"
+            icon="$nl$/icons/full/etool16/newprj_wiz.gif"
+            id="org.eclipse.ui.ide.format.extension.plugin.FormatExtensionProjectImportWizard"
+            name="%ExtensionImportWizards.ExternalProject">
+         <description>
+            %ExtensionImportWizards.ExternalProjectDescription
+         </description>
+      </wizard>
+      <wizard
+            category="org.eclipse.ui.Basic"
+            class="org.eclipse.ui.ide.format.extension.wizard.FormatExtensionArchiveFileImportWizard"
+            icon="$nl$/icons/full/etool16/importzip_wiz.gif"
+            id="org.eclipse.ui.ide.format.extension.plugin.FormatExtensionArchiveFileImportWizard"
+            name="%ExtensionImportWizards.ZipFile">
+         <description>
+            %ExtensionImportWizards.ZipFileDescription
+         </description>
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.exportWizards">
+      <wizard
+            category="org.eclipse.ui.Basic"
+            class="org.eclipse.ui.ide.format.extension.wizard.FormatExtensionArchiveFileExportWizard"
+            icon="$nl$/icons/full/etool16/exportzip_wiz.gif"
+            id="org.eclipse.ui.ide.format.extension.plugin.FormatExtensionArchiveFileExportWizard"
+            name="%ExtensionExportWizards.ZipFile">
+         <description>
+            %ExtensionExportWizards.ZipFileDescription
+         </description>
+      </wizard>
+   </extension>
+</plugin>
